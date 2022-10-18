@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C256D03A28FE8C3A00733253 /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C256D03928FE8C3A00733253 /* BusinessDetail.swift */; };
 		C2FAADB928FD417F0077AF30 /* SightSeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAADB828FD417F0077AF30 /* SightSeeApp.swift */; };
 		C2FAADBB28FD417F0077AF30 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAADBA28FD417F0077AF30 /* LaunchView.swift */; };
 		C2FAADBD28FD41890077AF30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FAADBC28FD41890077AF30 /* Assets.xcassets */; };
@@ -15,9 +16,15 @@
 		C2FAADCC28FD776F0077AF30 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAADCB28FD776E0077AF30 /* Business.swift */; };
 		C2FAADCE28FD7A490077AF30 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAADCD28FD7A490077AF30 /* BusinessSearch.swift */; };
 		C2FAADD128FD84BB0077AF30 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAADD028FD84BB0077AF30 /* Constants.swift */; };
+		C2FAADD728FD88190077AF30 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAADD628FD88190077AF30 /* HomeView.swift */; };
+		C2FAADDB28FD8E0C0077AF30 /* BusinessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAADDA28FD8E0B0077AF30 /* BusinessList.swift */; };
+		C2FAADDD28FD90F60077AF30 /* BusinessSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAADDC28FD90F60077AF30 /* BusinessSectionHeader.swift */; };
+		C2FAADDF28FD92180077AF30 /* BusinessSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAADDE28FD92180077AF30 /* BusinessSection.swift */; };
+		C2FAADE128FD98030077AF30 /* BusinessRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAADE028FD98030077AF30 /* BusinessRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C256D03928FE8C3A00733253 /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
 		C2FAADB528FD417F0077AF30 /* SightSee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SightSee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FAADB828FD417F0077AF30 /* SightSeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightSeeApp.swift; sourceTree = "<group>"; };
 		C2FAADBA28FD417F0077AF30 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
@@ -27,6 +34,11 @@
 		C2FAADCB28FD776E0077AF30 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		C2FAADCD28FD7A490077AF30 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
 		C2FAADD028FD84BB0077AF30 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C2FAADD628FD88190077AF30 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C2FAADDA28FD8E0B0077AF30 /* BusinessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessList.swift; sourceTree = "<group>"; };
+		C2FAADDC28FD90F60077AF30 /* BusinessSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSectionHeader.swift; sourceTree = "<group>"; };
+		C2FAADDE28FD92180077AF30 /* BusinessSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSection.swift; sourceTree = "<group>"; };
+		C2FAADE028FD98030077AF30 /* BusinessRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C256D03828FE8C1000733253 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C256D03928FE8C3A00733253 /* BusinessDetail.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		C2FAADAC28FD417F0077AF30 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				C2FAADBA28FD417F0077AF30 /* LaunchView.swift */,
+				C2FAADD528FD87FA0077AF30 /* Home */,
+				C2FAADD428FD87F10077AF30 /* Onboarding */,
+				C2FAADD328FD87E20077AF30 /* Denied */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -109,6 +132,49 @@
 				C2FAADD028FD84BB0077AF30 /* Constants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C2FAADD328FD87E20077AF30 /* Denied */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Denied;
+			sourceTree = "<group>";
+		};
+		C2FAADD428FD87F10077AF30 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		C2FAADD528FD87FA0077AF30 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C2FAADD628FD88190077AF30 /* HomeView.swift */,
+				C2FAADD928FD8DED0077AF30 /* Detail */,
+				C2FAADD828FD8DE20077AF30 /* List */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C2FAADD828FD8DE20077AF30 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				C256D03828FE8C1000733253 /* Detail */,
+				C2FAADDA28FD8E0B0077AF30 /* BusinessList.swift */,
+				C2FAADDC28FD90F60077AF30 /* BusinessSectionHeader.swift */,
+				C2FAADDE28FD92180077AF30 /* BusinessSection.swift */,
+				C2FAADE028FD98030077AF30 /* BusinessRow.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		C2FAADD928FD8DED0077AF30 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +248,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2FAADBB28FD417F0077AF30 /* LaunchView.swift in Sources */,
+				C2FAADE128FD98030077AF30 /* BusinessRow.swift in Sources */,
+				C2FAADD728FD88190077AF30 /* HomeView.swift in Sources */,
 				C2FAADCC28FD776F0077AF30 /* Business.swift in Sources */,
+				C2FAADDD28FD90F60077AF30 /* BusinessSectionHeader.swift in Sources */,
 				C2FAADB928FD417F0077AF30 /* SightSeeApp.swift in Sources */,
+				C256D03A28FE8C3A00733253 /* BusinessDetail.swift in Sources */,
 				C2FAADCE28FD7A490077AF30 /* BusinessSearch.swift in Sources */,
+				C2FAADDB28FD8E0C0077AF30 /* BusinessList.swift in Sources */,
+				C2FAADDF28FD92180077AF30 /* BusinessSection.swift in Sources */,
 				C2FAADCA28FD43E90077AF30 /* ContentModel.swift in Sources */,
 				C2FAADD128FD84BB0077AF30 /* Constants.swift in Sources */,
 			);

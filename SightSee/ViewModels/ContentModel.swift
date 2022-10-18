@@ -12,6 +12,8 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     
     var locationManager = CLLocationManager()
     
+    @Published var authorizationState = CLAuthorizationStatus.notDetermined
+    
     @Published var restuarants = [Business]()
     @Published var sights      = [Business]()
     
@@ -31,6 +33,10 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     // MARK: - Location Manager Delegate Methods
     /// Checks if user has given permission to get ocation
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        
+       // Update Authorization State property
+        authorizationState = locationManager.authorizationStatus
+        
         if locationManager.authorizationStatus == .authorizedAlways ||
             locationManager.authorizationStatus == .authorizedWhenInUse {
             // We have permission
@@ -93,13 +99,24 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
                     do {
                         let result = try decoder.decode(BusinessSearch.self, from: data!)
                         
+                        // Sort Businesses
+                        var businesses = result.businesses
+                        businesses.sort { b1, b2 in
+                            return b1.distance ?? 0 < b2.distance ?? 0
+                        }
+                        
+                        // Call get image function f the businesses
+                        for b in businesses{
+                            b.getImageData()
+                        }
+                        
                         DispatchQueue.main.async {
                             // Assign result to appropriate property
                             switch category {
                             case Constants.sightsKey:
-                                self.sights = result.businesses
+                                self.sights = businesses
                             case Constants.restuarantsKey:
-                                self.restuarants = result.businesses
+                                self.restuarants = businesses
                             default:
                                 break
                             }
