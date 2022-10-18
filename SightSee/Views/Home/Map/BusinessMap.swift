@@ -24,7 +24,7 @@ struct BusinessMap: UIViewRepresentable {
             if let lat  = business.coordinates?.latitude, let long = business.coordinates?.longitude {
                 
                 // create a new annotation
-                var a = MKPointAnnotation()
+                let a = MKPointAnnotation()
                 a.coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
                 a.title = business.name ?? ""
                 

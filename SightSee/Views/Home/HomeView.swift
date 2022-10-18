@@ -36,14 +36,35 @@ struct HomeView: View {
                     }.padding([.horizontal, .top])
                     
                 } else {
-                    // Show map
-                    BusinessMap(selectedBusiness: $selectedBusiness)
-                        .ignoresSafeArea()
-                        .sheet(item: $selectedBusiness) { business in
-                            // Create a business detail view instance
-                            // Pass in the selected business
-                            BusinessDetail(business: business)
+                    ZStack (alignment: .top) {
+                        // Show map
+                        BusinessMap(selectedBusiness: $selectedBusiness)
+                            .ignoresSafeArea()
+                            .sheet(item: $selectedBusiness) { business in
+                                // Create a business detail view instance
+                                // Pass in the selected business
+                                BusinessDetail(business: business)
+                            }
+                        
+                        // Rectangle overlay
+                        ZStack {
+                            Rectangle()
+                                .foregroundColor(.white)
+                                .cornerRadius(5)
+                                .frame(height: 48)
+                           
+                            HStack {
+                                Image(systemName: "location")
+                                Text("San Francisco")
+                                Spacer()
+                                Button("List View") {
+                                    self.isMapShowing = false
+                                }
+                            }
+                            .padding()
                         }
+                        .padding()
+                    }
                 }
             }
         } else {
