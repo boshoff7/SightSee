@@ -14,6 +14,8 @@
 		C256D04328FECE8600733253 /* DirectionsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C256D04228FECE8600733253 /* DirectionsMap.swift */; };
 		C256D04528FED79200733253 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C256D04428FED79200733253 /* OnboardingView.swift */; };
 		C256D04728FEDF8D00733253 /* LocationDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C256D04628FEDF8D00733253 /* LocationDeniedView.swift */; };
+		C256D04A28FEE46C00733253 /* YelpAttribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = C256D04928FEE46C00733253 /* YelpAttribution.swift */; };
+		C256D04C28FEE70D00733253 /* DashedDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C256D04B28FEE70D00733253 /* DashedDivider.swift */; };
 		C2FAADB928FD417F0077AF30 /* SightSeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAADB828FD417F0077AF30 /* SightSeeApp.swift */; };
 		C2FAADBB28FD417F0077AF30 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAADBA28FD417F0077AF30 /* LaunchView.swift */; };
 		C2FAADBD28FD41890077AF30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FAADBC28FD41890077AF30 /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 		C256D04228FECE8600733253 /* DirectionsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsMap.swift; sourceTree = "<group>"; };
 		C256D04428FED79200733253 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		C256D04628FEDF8D00733253 /* LocationDeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDeniedView.swift; sourceTree = "<group>"; };
+		C256D04928FEE46C00733253 /* YelpAttribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAttribution.swift; sourceTree = "<group>"; };
+		C256D04B28FEE70D00733253 /* DashedDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedDivider.swift; sourceTree = "<group>"; };
 		C2FAADB528FD417F0077AF30 /* SightSee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SightSee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FAADB828FD417F0077AF30 /* SightSeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightSeeApp.swift; sourceTree = "<group>"; };
 		C2FAADBA28FD417F0077AF30 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
@@ -71,6 +75,15 @@
 				C256D04228FECE8600733253 /* DirectionsMap.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		C256D04828FEE44C00733253 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C256D04928FEE46C00733253 /* YelpAttribution.swift */,
+				C256D04B28FEE70D00733253 /* DashedDivider.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		C2FAADAC28FD417F0077AF30 = {
@@ -132,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				C2FAADBA28FD417F0077AF30 /* LaunchView.swift */,
+				C256D04828FEE44C00733253 /* Common */,
 				C2FAADD528FD87FA0077AF30 /* Home */,
 				C2FAADD428FD87F10077AF30 /* Onboarding */,
 				C2FAADD328FD87E20077AF30 /* Denied */,
@@ -275,11 +289,13 @@
 				C2FAADDD28FD90F60077AF30 /* BusinessSectionHeader.swift in Sources */,
 				C2FAADB928FD417F0077AF30 /* SightSeeApp.swift in Sources */,
 				C256D03A28FE8C3A00733253 /* BusinessDetail.swift in Sources */,
+				C256D04C28FEE70D00733253 /* DashedDivider.swift in Sources */,
 				C2FAADCE28FD7A490077AF30 /* BusinessSearch.swift in Sources */,
 				C256D04128FEC98D00733253 /* BusinessTitle.swift in Sources */,
 				C2FAADDB28FD8E0C0077AF30 /* BusinessList.swift in Sources */,
 				C256D03D28FE9AEA00733253 /* BusinessMap.swift in Sources */,
 				C2FAADDF28FD92180077AF30 /* BusinessSection.swift in Sources */,
+				C256D04A28FEE46C00733253 /* YelpAttribution.swift in Sources */,
 				C2FAADCA28FD43E90077AF30 /* ContentModel.swift in Sources */,
 				C256D04528FED79200733253 /* OnboardingView.swift in Sources */,
 				C2FAADD128FD84BB0077AF30 /* Constants.swift in Sources */,
