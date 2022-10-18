@@ -54,14 +54,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C256D03828FE8C1000733253 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				C256D03928FE8C3A00733253 /* BusinessDetail.swift */,
-			);
-			path = Detail;
-			sourceTree = "<group>";
-		};
 		C256D03B28FE9AC800733253 /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,8 +155,8 @@
 			children = (
 				C2FAADD628FD88190077AF30 /* HomeView.swift */,
 				C256D03B28FE9AC800733253 /* Map */,
-				C2FAADD928FD8DED0077AF30 /* Detail */,
 				C2FAADD828FD8DE20077AF30 /* List */,
+				C2FAADD928FD8DED0077AF30 /* Detail */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -172,7 +164,6 @@
 		C2FAADD828FD8DE20077AF30 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				C256D03828FE8C1000733253 /* Detail */,
 				C2FAADDA28FD8E0B0077AF30 /* BusinessList.swift */,
 				C2FAADDC28FD90F60077AF30 /* BusinessSectionHeader.swift */,
 				C2FAADDE28FD92180077AF30 /* BusinessSection.swift */,
@@ -184,6 +175,7 @@
 		C2FAADD928FD8DED0077AF30 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				C256D03928FE8C3A00733253 /* BusinessDetail.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
